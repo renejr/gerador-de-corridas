@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "23511d81-7b9a-4a85-a316-eaba8d779a41",
+		"name": "Gerenciador-de-Corridas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7726022"
+	},
+	"item": [
+		{
+			"name": "Cria Corrida",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"usuario\": \"usuario1\", \"origem\": \"Rua A\", \"destino\": \"Rua B\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/corridas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"corridas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancela Corrida",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/corridas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"corridas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
